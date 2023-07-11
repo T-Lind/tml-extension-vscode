@@ -1,0 +1,36 @@
+{
+  "name": "turing-machine-language",
+  "displayName": "Turing Machine Language",
+  "description": "Support for code highlighting of the Turing Machine Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "languages": [
+      {
+          "id": "turing-machine-language",
+          "extensions": [".tml"],
+          "aliases": ["Turing Machine Language"],
+          "configuration": "./language-configuration.json"
+      }
+  ],
+  "grammars": [
+      {
+          "language": "turing-machine-language",
+          "scopeName": "source.turing-machine-language",
+          "path": "./turing-machine-language.tmLanguage.json"
+      }
+  ],
+    "themes": [
+      {
+        "label": "Turing Machine Language Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Turing Machine Language Theme-color-theme.json"
+      }
+    ]
+  }
+}

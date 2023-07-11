@@ -1,0 +1,85 @@
+{
+    
+    "name": "turing-machine-language",
+    "scopeName": "source.turing-machine-language",
+
+    
+    "patterns": [
+        {
+            "name": "category1.turing-machine-language",
+            "match": "\\;|\\#|\\bconst\\b"
+        },
+        {
+            "name": "category2.turing-machine-language",
+            "match": "\\?"
+        },
+        {
+            "name": "category3.turing-machine-language",
+            "match": "\\b(print|setTape|run|setValues|setPosition|generate|setCommand|move|goToPage|readTape|stop|generate|nextSection|prevSection|position|awareness|position|define)\\b"
+        },
+        {
+            "name": "category4.turing-machine-language",
+            "match": "\\b(AWARENESS|PAGE)\\b"
+        },
+        {
+            "name": "numbers.turing-machine-language",
+            "match": "\\b\\d+\\b"
+        },
+        {
+            "name": "comment.block.turing-machine-language",
+            "begin": "/\\*",
+            "end": "\\*/",
+            "patterns": [
+                {
+                    "name": "comment.block.turing-machine-language",
+                    "match": "[^\\*]+"
+                },
+                {
+                    "name": "comment.block.turing-machine-language",
+                    "match": "\\*+[^/]"
+                }
+            ]
+        },
+        {
+            "name": "comment.line.turing-machine-language",
+            "match": "//.*"
+        },
+        {
+            "name": "string.quoted.double.turing-machine-language",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.turing-machine-language",
+                    "match": "\\\\."
+                }
+            ]
+        }
+        
+        
+        
+        
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "category1.turing-machine-language",
+                    "match": "\\;|\\#|\\bconst\\b"
+                },
+                {
+                    "name": "category2.turing-machine-language",
+                    "match": "\\?"
+                },
+                {
+                    "name": "category3.turing-machine-language",
+                    "match": "\\b(print|setTape|run|setValues|setPosition|generate|setCommand|move|goToPage|readTape|stop|generate|nextSection|prevSection|position|awareness|position|define)\\b"
+                },
+                {
+                    "name": "category4.turing-machine-language",
+                    "match": "\\b(AWARENESS|PAGE)\\b"
+                }
+            ]
+        }
+    }
+}
