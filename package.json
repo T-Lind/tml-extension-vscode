@@ -3,16 +3,24 @@
   "displayName": "Turing Machine Language",
   "description": "Support for code highlighting of the Turing Machine Language",
   "version": "1.0.0",
+  "icon": "./icons/logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/T-Lind/tml-extension-vscode.git"
 },
+"homepage": "https://txkl.gitbook.io/tml/",
+  "publisher": "T-Lind",
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
     "Themes"
   ],
+  "galleryBanner": {
+    "color": "#912d2f",
+    "theme": "dark",
+    "image": "./images/tml-banner.png"
+  },
   "contributes": {
     "languages": [
       {
